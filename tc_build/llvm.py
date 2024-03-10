@@ -421,7 +421,7 @@ class LLVMSlimBuilder(LLVMBuilder):
             'COMPILER_RT_BUILD_LIBFUZZER': 'OFF',
             # We only use compiler-rt for the sanitizers, disable some extra stuff we don't need
             # Chromium OS also does this: https://crrev.com/c/1629950
-            'COMPILER_RT_BUILD_CRT': 'OFF',
+            'COMPILER_RT_BUILD_CRT': 'ON',
             'COMPILER_RT_BUILD_XRAY': 'OFF',
         }
         # yapf: enable
